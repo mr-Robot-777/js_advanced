@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html * {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.header {
+    padding: 12px;
+    background: #f3815b;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #f16f43, 2px 2px 0 #f16f43;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+#logo {
+    content: ' ';
+    display: inline-block;
+    background: url("logo.png") no-repeat 0 0;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    position: absolute;
+    margin-left: -32px;
+    margin-top: -32px;
+    top: 100%;
+    right: 32px;
+    left: auto;
+    bottom: auto;
+    transform: rotate(45deg);
+}
+.content {
+    padding: 12px;
+    overflow-y: scroll;
+    flex: 1;
+	background: #50a3a2;
+    background: linear-gradient(to bottom right, #323232 0%, #444 100%);
+}
+.content .wrapper {
+    transition: all 100ms ease-in-out;
+}
+.content.wide .wrapper {
+    max-width: 100%;
+}
+.footer {
+    padding: 12px;
+    background: #3a928c;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #2b6d69, 2px 2px 0 #2b6d69;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1060px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    margin: 6px;
+    flex-direction: row;
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    background: #53bbb4;
+    cursor: default;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+.productId {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: -16px;
+    transform: translate(-50%, -50%);
+    color: rgba(255,255,255,.3);
+}
+.productData {
+    position: relative;
+    padding: 6px 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 48px;
+}
+.productTitle {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 0 #de343b, 2px 2px 0 #de343b;
+    font-size: 20px;
+    letter-spacing: -1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+.productTitle + div {
+    margin-left: 6px;
+}
+.productPrice {
+    color: #c51049;
+    font-size: 22px;
+    font-weight: 600;
+}
+.productDetails {
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.productButton {
+    appearance: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: #de343b;
+    color: rgba(255,255,255,.95);
+    border: 1px solid #f16f43;
+    box-shadow: 0 3px 0 #c51049;
+    outline: none;
+    transition: 50ms ease-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+.productButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 #c51049;
+}
