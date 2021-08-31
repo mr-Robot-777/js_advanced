@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+form {
+    width: 400px;
+    align-items: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+    text-transform: capitalize;
+}
+
+input, textarea, button {
+    height: 20px;
+    width: 90%;
+    color: #003A3A;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid;
+}
+
+textarea {
+    height: 200px;
+}
+
+.formErrorInput {
+    border-color: red;
+}
+.formErrorMessage {
+    color: red;
+}
