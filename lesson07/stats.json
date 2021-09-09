@@ -1,0 +1,42 @@
+[
+  {
+    "action": "add",
+    "product_name": "Мышка",
+    "time": 1631174619309
+  },
+  {
+    "action": "add",
+    "product_name": "Клавиатура",
+    "time": 1631174620047
+  },
+  {
+    "action": "add",
+    "product_name": "Колонки",
+    "time": 1631174620696
+  },
+  {
+    "action": "add",
+    "product_name": "Наушники",
+    "time": 1631174621333
+  },
+  {
+    "action": "remove",
+    "product_name": "Мышка",
+    "time": 1631174624636
+  },
+  {
+    "action": "remove",
+    "product_name": "Клавиатура",
+    "time": 1631174625166
+  },
+  {
+    "action": "remove",
+    "product_name": "Колонки",
+    "time": 1631174625893
+  },
+  {
+    "action": "remove",
+    "product_name": "Наушники",
+    "time": 1631174626429
+  }
+]
