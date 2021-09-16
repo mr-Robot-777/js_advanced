@@ -1,0 +1,39 @@
+[
+  {
+    "id": 31,
+    "product_name": "Keyboard",
+    "product_description": "Описание",
+    "price": 1600,
+    "img": "public/img/product-31.png"
+  },
+  {
+    "id": 11,
+    "product_name": "Mouse",
+    "price": 3000,
+    "img": "public/img/product-11.png"
+  },
+  {
+    "id": 21,
+    "product_name": "Monitor",
+    "price": 2000,
+    "img": "public/img/product-21.png"
+  },
+  {
+    "id": 41,
+    "product_name": "Phone",
+    "price": 2000,
+    "img": "public/img/product-41.png"
+  },
+  {
+    "id": 5,
+    "product_name": "Tablet",
+    "price": 2000,
+    "img": "public/img/product-5.png"
+  },
+  {
+    "id": 6,
+    "product_name": "6",
+    "price": 2000,
+    "img": "public/img/product-6.png"
+  }
+]
